@@ -1,5 +1,177 @@
-body {
+html {
     font-family: 'Nanum Myeongjo', serif;
+color:whitesmoke;
+height: 100%;
+}
 
-    }
+body {
+  margin: 0;
+    
+    display: flex;
+  flex-direction: column;
+}
 
+p {
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+h1 {
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+
+.header {
+text-align: center;
+    color: black;
+    height: 200px;
+    background-color: transparent;
+    padding-top: 20px;
+    font-size: 52px;
+    width: 100%;
+    margin: auto 0;
+    position: fixed;
+}
+
+.caseRight{
+    color: black;
+    margin: auto;
+    margin-top: 250px;
+    width: 50%;
+    background-color: antiquewhite;
+    border: 3px solid; 
+    padding: 10px;
+
+}
+.parallax{
+    /* The image used */
+    background-image: url("asphalt-aspiration-clouds-215.jpg");
+
+    /* Set a specific height */
+    min-height: 100%; 
+    width: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parallax2{
+    /* The image used */
+    background-image: url("california-clouds-dawn-414528.jpg");
+
+    /* Set a specific height */
+    min-height: 100%; 
+    width: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rebeccapurple;
+    opacity: 0.7;
+    color: white;
+    text-align: center;
+}
+
+
+/* .content {
+  flex: 1 0 auto;
+}*/
+
+
+.footer {
+  flex-shrink: 0;
+}
+
+
+.menu {
+	position:fixed;
+	top:0px;
+	width:100%; 
+	height:75px; 
+	background-color:#DDDDDD;
+	color: #FFFFFF;
+	z-index:9999;
+	display: none;
+}
+
+
+nav {
+  background: violet;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 10px;
+  color: #333;
+}
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    overflow: hidden;
+    background-color: navajowhite;
+    opacity: 0.8;
+   
+    
+     transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+}
+
+<!-- li {
+    display: inline-block;
+    float:right;
+    padding-top: 10px;
+    padding: 1%;
+    
+} -->
+
+li a {
+    text-decoration: none;
+    color: coral;
+}
+
+li a:hover {
+    transition: 0.5s;
+    color: blueviolet;
+}
+
+*/
