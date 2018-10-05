@@ -5,8 +5,7 @@ height: 100%;
 }
 
 body {
-  margin: 0;
-    
+margin: 0;    
     display: flex;
   flex-direction: column;
 }
@@ -23,6 +22,15 @@ h1 {
     
 }
 
+a {
+    color: orange;
+    
+}
+
+a:hover{
+    transition: 0.7s;
+    color: aliceblue;
+}
 
 .header {
 text-align: center;
@@ -41,14 +49,28 @@ text-align: center;
     margin: auto;
     margin-top: 250px;
     width: 50%;
-    background-color: antiquewhite;
-    border: 3px solid; 
-    padding: 10px;
+    float: left;
+    background-color: orange;
+    border: 2px solid; 
+    padding: 20px;
+
+}
+
+.caseLeft{
+    color: black;
+    margin: auto;
+    margin-top: 250px;
+    width: 30%;
+    float: right;
+    background-color: rebeccapurple;
+    border: 2px solid; 
+    padding: 20px;
+ 
 
 }
 .parallax{
     /* The image used */
-    background-image: url("asphalt-aspiration-clouds-215.jpg");
+    background-image: url("california-clouds-dawn-414528.jpg");
 
     /* Set a specific height */
     min-height: 100%; 
@@ -62,9 +84,10 @@ text-align: center;
 }
 
 
+
 .parallax2{
     /* The image used */
-    background-image: url("california-clouds-dawn-414528.jpg");
+    background-color: antiquewhite;
 
     /* Set a specific height */
     min-height: 100%; 
@@ -111,6 +134,12 @@ text-align: center;
 	display: none;
 }
 
+.top-container {
+  background-color: orange;
+  padding: 30px;
+  
+  text-align: center;
+}
 
 nav {
   background: violet;
@@ -137,6 +166,21 @@ nav ul li {
   margin: 0 10px;
   color: #333;
 }
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
 /* ul {
     list-style-type: none;
     margin: 0;
